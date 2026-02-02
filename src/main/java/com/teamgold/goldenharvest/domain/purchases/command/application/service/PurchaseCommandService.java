@@ -1,6 +1,6 @@
 package com.teamgold.goldenharvest.domain.purchases.command.application.service;
 
-import com.teamgold.goldenharvest.domain.purchases.command.application.event.PurchaseOrderCreatedEvent;
+import com.teamgold.goldenharvest.domain.purchases.command.application.event.dto.PurchaseOrderCreatedEvent;
 import com.teamgold.goldenharvest.domain.purchases.command.domain.aggregate.OrderStatus;
 import com.teamgold.goldenharvest.domain.purchases.command.domain.aggregate.PurchaseOrder;
 import com.teamgold.goldenharvest.domain.purchases.command.domain.repository.OrderStatusRepository;

@@ -17,9 +17,9 @@ public class PurchaseCommandController {
     private final PurchaseCommandService purchaseCommandService;
 
     @PostMapping
-    public ResponseEntity<ApiResponse<Void>> createPurcahseOrder(
-            @RequestParam Long quantity
-            , @RequestParam String skuNo
+    public ResponseEntity<ApiResponse<Void>> createPurchaseOrder(
+            @RequestParam Long quantity,
+            @RequestParam String skuNo
     ) {
         purchaseCommandService.createPurchaseOrder(quantity, skuNo);
 

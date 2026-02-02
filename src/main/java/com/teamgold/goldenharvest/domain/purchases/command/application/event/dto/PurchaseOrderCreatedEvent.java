@@ -1,4 +1,4 @@
-package com.teamgold.goldenharvest.domain.purchases.command.application.event;
+package com.teamgold.goldenharvest.domain.purchases.command.application.event.dto;
 
 
 import java.time.LocalDate;
@@ -8,5 +8,4 @@ public record PurchaseOrderCreatedEvent(
         LocalDate createdAt,
         String skuNo,
         int quantity
-) {
-}
+) { }

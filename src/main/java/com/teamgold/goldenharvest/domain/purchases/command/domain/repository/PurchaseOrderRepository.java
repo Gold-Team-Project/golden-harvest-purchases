@@ -5,5 +5,4 @@ import com.teamgold.goldenharvest.domain.purchases.command.domain.aggregate.Purc
 public interface PurchaseOrderRepository {
 
     PurchaseOrder save(PurchaseOrder purchaseOrder);
-
 }
