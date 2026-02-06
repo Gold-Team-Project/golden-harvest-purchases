@@ -35,9 +35,7 @@ public class PurchaseCommandService {
             throw new IllegalArgumentException("수량이 너무 큽니다");
         }
 
-        // 2) 기본 상태 조회 (예: DRAFT)
-        // 너 OrderStatus 엔티티/컬럼명에 맞춰 findBy... 는 바꿔야 함
-        OrderStatus draft = OrderStatusRepository.findByType("DRAFT");
+        OrderStatus draft = OrderStatusRepository.findByType("CONFIRMED");
 
         // 3) PO ID 생성 (20자 제한 고려)
         String poId = generatePoId(); // 예: PO20260112A1B2C3D4 (18자)
@@ -63,9 +61,6 @@ public class PurchaseCommandService {
                         quantity.intValue()
                 )
         );
-
-
-
         return po.getPurchase_order_id();
     }
 
